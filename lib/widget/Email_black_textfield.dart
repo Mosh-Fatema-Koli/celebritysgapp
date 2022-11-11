@@ -1,8 +1,8 @@
 import 'package:celebritysgapp/widget/brand_colors.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextField extends StatelessWidget {
-  CustomTextField({
+class EmailBlacCustomTextField extends StatelessWidget {
+  EmailBlacCustomTextField({
     this.icon,
     this.keytype,
     this.lebelText,
@@ -63,10 +63,12 @@ class CustomTextField extends StatelessWidget {
           fillColor: secondaryColor,
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.white, width: 1),
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
             borderSide: BorderSide(
               color: Colors.blueGrey,
               width: 1,

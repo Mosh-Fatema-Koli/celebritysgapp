@@ -1,3 +1,4 @@
+import 'package:celebritysgapp/view/pages/Pages/home/home.dart';
 import 'package:celebritysgapp/widget/brand_colors.dart';
 import 'package:celebritysgapp/widget/custom_TextField.dart';
 import 'package:flutter/material.dart';

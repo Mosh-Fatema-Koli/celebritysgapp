@@ -1,8 +1,8 @@
 import 'package:celebritysgapp/widget/brand_colors.dart';
 import 'package:flutter/material.dart';
 
-class CustomTextField extends StatelessWidget {
-  CustomTextField({
+class EmailCustomTextField extends StatelessWidget {
+  EmailCustomTextField({
     this.icon,
     this.keytype,
     this.lebelText,
@@ -50,7 +50,7 @@ class CustomTextField extends StatelessWidget {
         // onSaved: (String value) => data[keyy] = value,
         //  onChanged: onChangeFunction,
         autofocus: false,
-        style: myStyle(14.0, Color.fromARGB(234, 255, 253, 253)),
+        style: myStyle(16.0, Color.fromARGB(251, 77, 74, 74)),
         decoration: InputDecoration(
           // hoverColor: Colors.black,
           filled: true,
@@ -60,23 +60,25 @@ class CustomTextField extends StatelessWidget {
               Color.fromARGB(255, 59, 66, 109).withOpacity(0.9),
               FontWeight.w500),
           contentPadding: EdgeInsets.symmetric(vertical: 0, horizontal: 16),
-          fillColor: secondaryColor,
+          fillColor: Color.fromARGB(255, 255, 255, 255),
           focusedBorder: OutlineInputBorder(
             borderSide: const BorderSide(color: Colors.white, width: 1),
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
           ),
           enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(8.0),
+            borderRadius: BorderRadius.only(
+                topLeft: Radius.circular(8), bottomLeft: Radius.circular(8)),
             borderSide: BorderSide(
               color: Colors.blueGrey,
               width: 1,
             ),
           ),
           labelText: lebelText,
-          hintStyle: myStyle(15, Color.fromARGB(136, 236, 216, 216)),
+          hintStyle: myStyle(15, Color.fromARGB(235, 105, 101, 101)),
           suffixIcon: suffixIcon,
           prefixIcon: icon,
-          labelStyle: myStyle(15, Color.fromARGB(136, 238, 217, 217)),
+          labelStyle: myStyle(15, Color.fromARGB(213, 119, 118, 118)),
           hintText: hintText,
         ),
       ),

@@ -1,5 +1,4 @@
-// ignore_for_file: prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
-
+import 'package:celebritysgapp/view/pages/Pages/home/home.dart';
 import 'package:dotted_line/dotted_line.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -66,10 +65,7 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => AboutUsPage()));
-              },
+              onTap: () {},
             ),
             DottedLine(
               dashColor: Colors.white,
@@ -84,10 +80,7 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => NewsPage()));
-              },
+              onTap: () {},
             ),
             DottedLine(
               dashColor: Colors.white,
@@ -102,10 +95,7 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => WorkPage()));
-              },
+              onTap: () {},
             ),
             DottedLine(
               dashColor: Colors.white,
@@ -120,10 +110,7 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              onTap: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => HomePage()));
-              },
+              onTap: () {},
             ),
             DottedLine(
               dashColor: Colors.white,
@@ -138,10 +125,7 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => PlayEarnPage()));
-              },
+              onTap: () {},
             ),
             DottedLine(
               dashColor: Colors.white,
@@ -169,14 +153,14 @@ class _ServiceDrawerState extends State<ServiceDrawer> {
                   child: Row(
                     children: [
                       Icon(
-                        Icons.account_balance_wallet_rounded,
+                        Icons.logout_rounded,
                         color: Colors.white,
                       ),
                       SizedBox(
                         width: 10,
                       ),
                       Text(
-                        "LOGIN WITH WALLET",
+                        "LOG OUT",
                         style: TextStyle(
                             color: Colors.white, fontWeight: FontWeight.w600),
                       ),

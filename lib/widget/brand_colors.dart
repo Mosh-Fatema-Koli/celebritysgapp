@@ -29,7 +29,7 @@ class BrandColors {
 const Color aPrimaryColor = Color(0xFFFEC61C);
 
 const primaryColor = Color(0xFF2697FF);
-const secondaryColor = Color(0xFF2A2D3E);
+const secondaryColor = Color.fromARGB(255, 2, 18, 31);
 const bgColor = Color(0xFF212332);
 const Color navyBlueColor = Color(0xff314579);
 const defaultPadding = 16.0;

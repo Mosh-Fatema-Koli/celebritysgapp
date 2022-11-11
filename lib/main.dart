@@ -1,5 +1,9 @@
+import 'package:celebritysgapp/controller_binding.dart';
 import 'package:celebritysgapp/route/route.dart';
+import 'package:celebritysgapp/view/pages/Pages/home/home.dart';
 import 'package:celebritysgapp/view/pages/onboard.dart';
+import 'package:celebritysgapp/view/pages/Screen/nabnar.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -29,8 +33,9 @@ class MyApp extends StatelessWidget {
       ),
       //initialBinding: ControllerBindings(),
       initialRoute: splash,
+      initialBinding: ControllerBindings(),
       getPages: getPages,
-      home: OnboardPage(),
+      home: HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
